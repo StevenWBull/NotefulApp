@@ -18,13 +18,13 @@ export default class App extends Component {
         <Header />
       </header>
       <main> 
-        <Route path='/folder/:id'
-          <FolderSection foldersFromState={this.state.store.folders} />
+        <Route exact path='/folder/:id'
+               render={ ({match}) => <FolderSection foldersFromState={this.state.store.folders} /> }
         />
       </main>
       <section>
-        <Route path='/note/:id'
-          <NoteSection itemsFromState={this.state.store.notes} />
+        <Route exact path='/note/:id'
+               render={ ({match}) => <NoteSection itemsFromState={this.state.store.notes} /> }
         />
       </section>
       </>
