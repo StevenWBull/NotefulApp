@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
+import store from './dummyStore';
 
-function App() {
-  return (
-    <main className='App'>
-      {/* content goes here */}
-    </main>
-  );
+export default class App extends Component {
+
+  state = {
+    store
+  }
+
+  render() {
+    return (
+      <>
+      <header> 
+
+      </header>
+      <main> 
+
+      </main>
+      <section>
+        
+      </section>
+      </>
+    );
+  }
 }
-
-export default App;
